@@ -1,0 +1,48 @@
+<html>
+
+    <head>
+        <title>Run My Code</title>
+        <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+    <body>
+        <!-- Top Bar with Title and toggle elements. -->
+        <div id="top-bar">
+            <span id="website-name">Run My Code</span>
+            <div id="toggle-section">
+                <div class="toggle-element" id="first-element">HTML</div>
+                <div class="toggle-element">CSS</div>
+                <div class="toggle-element">JavaScript</div>
+                <div class="toggle-element" id="last-element">Output</div>
+            </div>
+        </div>
+
+        <!-- HTML input textarea -->
+        <textarea type="text" class="codefield" id="HTML">
+          <p id="para">This is sample text!</p>
+          <button id="btn">Alert button</button>
+        </textarea>
+
+        <!-- CSS input textarea -->
+        <textarea type="text" class="codefield" id="CSS">
+          p {
+              color: red;
+          }
+        </textarea>
+
+        <!-- JavaScript input textarea -->
+        <textarea type="text" class="codefield" id="JavaScript">
+          document.getElementById("btn").onclick = function(){
+            alert("JS alert!");
+          }
+        </textarea>
+
+        <!-- Output in iFrame -->
+        <iframe class="codefield" id="Output"></iframe>
+        <script src=scripts.js type="text/javascript"></script>
+    </body>
+</html>
